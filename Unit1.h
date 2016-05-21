@@ -47,19 +47,7 @@ __published:	// IDE-managed Components
         void __fastcall ButtonDeleteFolderClick(TObject *Sender);
         void __fastcall ButtonCreateFileClick(TObject *Sender);
         void __fastcall ButtonUpdateClick(TObject *Sender);
-private:
-        void MyDelete (AnsiString Dir, AnsiString tmp)
-        {
-            TSearchRec SR;
-            int ires;
-            ires = FindFirst(Dir + tmp, faAnyFile, SR);
-            while (ires==0)
-            {
-                DeleteFile(Dir + SR.Name);
-                ires=FindNext(SR);
-            }
-            FindClose(SR);
-        }
+private:        // User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);
 };
