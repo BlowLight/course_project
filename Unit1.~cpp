@@ -31,7 +31,6 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
     EditCreateFolder->Enabled = False;
     EditFileCreate->Enabled = False;
 
-    ButtonDeleteFile->Enabled = False;
     ButtonRenameFile->Enabled = False;
 }
 //---------------------------------------------------------------------------
@@ -136,6 +135,8 @@ void __fastcall TForm1::ButtonCopyFileClick(TObject *Sender)
 
 void __fastcall TForm1::ButtonPasteFileClick(TObject *Sender)
 {
+
+
     if (Option == 1)
     {
         Fn = "\\"+Fn;
