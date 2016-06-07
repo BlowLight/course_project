@@ -1,6 +1,5 @@
 #include <vcl.h>
 #include <dir.h>
-#include <iostream.h>
 #include <fstream.h>
 
 #pragma hdrstop
@@ -96,7 +95,7 @@ void __fastcall TForm1::ButtonDeleteFolderClick(TObject *Sender)
 
 void __fastcall TForm1::ButtonCreateFileClick(TObject *Sender)
 {
-    String FileName;
+    AnsiString FileName;
     char * b;
 
     EditFileCreate->Enabled = True;
@@ -135,8 +134,6 @@ void __fastcall TForm1::ButtonCopyFileClick(TObject *Sender)
 
 void __fastcall TForm1::ButtonPasteFileClick(TObject *Sender)
 {
-
-
     if (Option == 1)
     {
         Fn = "\\"+Fn;
@@ -173,8 +170,6 @@ void __fastcall TForm1::ButtonCutFileClick(TObject *Sender)
 
 void __fastcall TForm1::Button2Click(TObject *Sender)
 {
-    char drv;
-    drv = UpCase(DriveComboBox->Drive);
     while (DirectoryListBox1->ItemIndex != 0)
     {
         DirectoryListBox1->ItemIndex = DirectoryListBox1->ItemIndex-1;
@@ -194,4 +189,6 @@ void __fastcall TForm1::DriveComboBoxChange(TObject *Sender)
         ShowMessage(error);
     }
 }
+
+//---------------------------------------------------------------------------
 

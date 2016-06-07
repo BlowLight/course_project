@@ -1,14 +1,14 @@
 object Form1: TForm1
   Left = 1003
-  Top = 221
+  Top = 241
   BorderStyle = bsSingle
   Caption = #1060#1072#1081#1083#1086#1074#1099#1081' '#1084#1077#1085#1077#1076#1078#1077#1088
-  ClientHeight = 600
+  ClientHeight = 569
   ClientWidth = 800
   Color = clMenu
-  Constraints.MaxHeight = 631
+  Constraints.MaxHeight = 600
   Constraints.MaxWidth = 808
-  Constraints.MinHeight = 631
+  Constraints.MinHeight = 600
   Constraints.MinWidth = 808
   Ctl3D = False
   Font.Charset = DEFAULT_CHARSET
@@ -21,12 +21,12 @@ object Form1: TForm1
   OnCreate = FormCreate
   DesignSize = (
     800
-    600)
+    569)
   PixelsPerInch = 96
   TextHeight = 16
   object Panel1: TPanel
     Left = 410
-    Top = 480
+    Top = 448
     Width = 380
     Height = 110
     BevelOuter = bvNone
@@ -45,7 +45,7 @@ object Form1: TForm1
   end
   object DriveComboBox: TDriveComboBox
     Left = 10
-    Top = 112
+    Top = 80
     Width = 190
     Height = 22
     Ctl3D = False
@@ -63,7 +63,7 @@ object Form1: TForm1
   end
   object DirectoryListBox1: TDirectoryListBox
     Left = 10
-    Top = 144
+    Top = 112
     Width = 380
     Height = 329
     BevelInner = bvNone
@@ -77,7 +77,7 @@ object Form1: TForm1
   end
   object FileListBox: TFileListBox
     Left = 410
-    Top = 144
+    Top = 112
     Width = 380
     Height = 330
     Align = alCustom
@@ -92,7 +92,7 @@ object Form1: TForm1
   end
   object FilterComboBox: TFilterComboBox
     Left = 600
-    Top = 112
+    Top = 74
     Width = 190
     Height = 24
     Anchors = [akRight]
@@ -108,7 +108,7 @@ object Form1: TForm1
   end
   object EditRenameFile: TEdit
     Left = 540
-    Top = 550
+    Top = 518
     Width = 121
     Height = 22
     TabOrder = 6
@@ -117,7 +117,7 @@ object Form1: TForm1
   end
   object ButtonRenameFile: TButton
     Left = 540
-    Top = 515
+    Top = 483
     Width = 120
     Height = 30
     Caption = #1055#1077#1088#1077#1080#1084#1077#1085#1086#1074#1072#1090#1100
@@ -126,7 +126,7 @@ object Form1: TForm1
   end
   object ButtonOpenFile: TButton
     Left = 420
-    Top = 515
+    Top = 483
     Width = 100
     Height = 30
     Caption = #1054#1090#1082#1088#1099#1090#1100
@@ -135,7 +135,7 @@ object Form1: TForm1
   end
   object ButtonDeleteFile: TButton
     Left = 420
-    Top = 550
+    Top = 518
     Width = 100
     Height = 30
     Caption = #1059#1076#1072#1083#1080#1090#1100
@@ -144,7 +144,7 @@ object Form1: TForm1
   end
   object Panel2: TPanel
     Left = 10
-    Top = 480
+    Top = 448
     Width = 380
     Height = 110
     BevelOuter = bvNone
@@ -174,7 +174,7 @@ object Form1: TForm1
   end
   object Button1: TButton
     Left = 24
-    Top = 515
+    Top = 483
     Width = 120
     Height = 30
     Caption = #1057#1086#1079#1076#1072#1090#1100' '#1087#1072#1087#1082#1091
@@ -183,14 +183,14 @@ object Form1: TForm1
   end
   object EditCreateFolder: TEdit
     Left = 24
-    Top = 550
+    Top = 518
     Width = 120
     Height = 22
     TabOrder = 8
   end
   object ButtonCreateFile: TButton
     Left = 680
-    Top = 515
+    Top = 483
     Width = 100
     Height = 30
     Caption = #1057#1086#1079#1076#1072#1090#1100
@@ -199,23 +199,23 @@ object Form1: TForm1
   end
   object EditFileCreate: TEdit
     Left = 680
-    Top = 550
+    Top = 518
     Width = 100
     Height = 22
     TabOrder = 13
   end
   object PanelHeader: TPanel
     Left = 10
-    Top = 10
+    Top = 16
     Width = 780
-    Height = 90
+    Height = 49
     BevelOuter = bvNone
     BorderWidth = 1
     BorderStyle = bsSingle
     TabOrder = 14
     object ButtonCopyFile: TButton
       Left = 16
-      Top = 48
+      Top = 8
       Width = 100
       Height = 30
       Caption = #1050#1086#1087#1080#1088#1086#1074#1072#1090#1100
@@ -224,7 +224,7 @@ object Form1: TForm1
     end
     object ButtonCutFile: TButton
       Left = 128
-      Top = 48
+      Top = 8
       Width = 100
       Height = 30
       Caption = #1042#1099#1088#1077#1079#1072#1090#1100
@@ -233,7 +233,7 @@ object Form1: TForm1
     end
     object ButtonPasteFile: TButton
       Left = 240
-      Top = 48
+      Top = 8
       Width = 100
       Height = 30
       Caption = #1042#1089#1090#1072#1074#1080#1090#1100
@@ -243,7 +243,7 @@ object Form1: TForm1
   end
   object ButtonUpdate: TButton
     Left = 290
-    Top = 110
+    Top = 78
     Width = 100
     Height = 30
     Caption = #1054#1073#1085#1086#1074#1080#1090#1100
@@ -252,7 +252,7 @@ object Form1: TForm1
   end
   object Button2: TButton
     Left = 205
-    Top = 110
+    Top = 78
     Width = 20
     Height = 25
     Caption = '/'

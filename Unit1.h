@@ -54,8 +54,8 @@ __published:	// IDE-managed Components
     void __fastcall ButtonPasteFileClick(TObject *Sender);
     void __fastcall EditRenameFileChange(TObject *Sender);
     void __fastcall ButtonCutFileClick(TObject *Sender);
-        void __fastcall Button2Click(TObject *Sender);
-        void __fastcall DriveComboBoxChange(TObject *Sender);
+    void __fastcall Button2Click(TObject *Sender);
+    void __fastcall DriveComboBoxChange(TObject *Sender);
 private:
     void DeleteDir (AnsiString Dir, AnsiString tmp)
     {
