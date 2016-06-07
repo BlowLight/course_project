@@ -59,6 +59,7 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 0
     TextCase = tcUpperCase
+    OnChange = DriveComboBoxChange
   end
   object DirectoryListBox1: TDirectoryListBox
     Left = 10
@@ -248,5 +249,20 @@ object Form1: TForm1
     Caption = #1054#1073#1085#1086#1074#1080#1090#1100
     TabOrder = 15
     OnClick = ButtonUpdateClick
+  end
+  object Button2: TButton
+    Left = 205
+    Top = 110
+    Width = 20
+    Height = 25
+    Caption = '/'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 16
+    OnClick = Button2Click
   end
 end

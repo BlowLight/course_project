@@ -170,3 +170,27 @@ void __fastcall TForm1::ButtonCutFileClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+    char drv;
+    drv = UpCase(DriveComboBox->Drive);
+    while (DirectoryListBox1->ItemIndex != 0)
+    {
+        DirectoryListBox1->ItemIndex = DirectoryListBox1->ItemIndex-1;
+    }
+    DirectoryListBox1->OpenCurrent();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::DriveComboBoxChange(TObject *Sender)
+{
+    char drv;
+    drv = UpCase(DriveComboBox->Drive);
+
+    if (DiskSize(Byte(drv) - 0x40)  == -1)
+    {
+        String error = "В дисководе " + AnsiString(drv) + ": нет носителя.";
+        ShowMessage(error);
+    }
+}
+
