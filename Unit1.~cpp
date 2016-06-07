@@ -134,6 +134,19 @@ void __fastcall TForm1::ButtonCopyFileClick(TObject *Sender)
 
 void __fastcall TForm1::ButtonPasteFileClick(TObject *Sender)
 {
+    AnsiString TempName, Exe;
+    for(int i = 0; i < FileListBox->Count; i++)
+    {
+        AnsiString Name = FileListBox->Items->Strings[i];
+        if (Name == Fn)
+        {
+            TempName = FileListBox->Items->Strings[i].SubString(1, FileListBox->Items->Strings[i].AnsiPos(".")-1);
+            Exe = FileListBox->Items->Strings[i].SubString(FileListBox->Items->Strings[i].AnsiPos("."), FileListBox->Items->Strings[i].Length());
+            Fn = TempName + "-copy" + Exe;
+            break;
+        }
+    }
+
     if (Option == 1)
     {
         Fn = "\\"+Fn;
