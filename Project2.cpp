@@ -4,6 +4,7 @@
 #pragma hdrstop
 //---------------------------------------------------------------------------
 USEFORM("Unit1.cpp", Form1);
+USEFORM("Unit2.cpp", SplashForm);
 //---------------------------------------------------------------------------
 WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {

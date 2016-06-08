@@ -5,6 +5,7 @@
 #pragma hdrstop
 
 #include "Unit1.h"
+#include "Unit2.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -31,6 +32,10 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
     EditFileCreate->Enabled = False;
 
     ButtonRenameFile->Enabled = False;
+
+    SplashForm = new TSplashForm(this);
+    SplashForm->ShowModal();
+    delete SplashForm;
 }
 //---------------------------------------------------------------------------
 
